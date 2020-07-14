@@ -7,6 +7,7 @@ steps:
           env:
             BUILDKITE_TOKEN: buildkite-token
       - chrisdothtml/bail-early#e20c4bf:
+          if: '"false" = "true"'
   - wait
   - command: 'echo "command 2"'
     agents:
