@@ -1,5 +1,5 @@
 steps:
-  - command: 'echo command'
+  - command: 'exit 1'
     agents:
       queue: 'uber-fleet-workers'
     plugins:
