@@ -3,10 +3,10 @@ steps:
     agents:
       queue: 'uber-fleet-workers'
     plugins:
-      # - ssh://gitolite@code.uber.internal/infra/aws-sm-buildkite-plugin#9496834:
-      #     env:
-      #       BUILDKITE_TOKEN: buildkite-token
-      - chrisdothtml/bail-early#21196f4:
+      - ssh://gitolite@code.uber.internal/infra/aws-sm-buildkite-plugin#9496834:
+          env:
+            BUILDKITE_TOKEN: buildkite-token
+      - chrisdothtml/bail-early#670ccbe:
   - wait
   - command: 'echo "command 2"'
     agents:
