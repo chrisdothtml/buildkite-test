@@ -3,4 +3,4 @@ steps:
     agents:
       queue: 'uber-fleet-workers'
     plugins:
-      - chrisdothtml/bail-early#f11bad7:
+      - chrisdothtml/bail-early#360ed16:
