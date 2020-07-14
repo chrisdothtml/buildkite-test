@@ -1,13 +1,12 @@
 steps:
-  - command: 'exit 1'
+  - command: 'echo foo'
     agents:
       queue: 'uber-fleet-workers'
     plugins:
       - ssh://gitolite@code.uber.internal/infra/aws-sm-buildkite-plugin#9496834:
           env:
             BUILDKITE_TOKEN: buildkite-token
-      - chrisdothtml/bail-early#e20c4bf:
-          if: '"false" = "true"'
+      - chrisdothtml/bail-early#e20c4bf: ~
   - wait
   - command: 'echo "command 2"'
     agents:
