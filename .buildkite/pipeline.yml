@@ -1,4 +1,6 @@
 steps:
   - command: 'echo command'
+    agents:
+      queue: 'uber-fleet-workers'
     plugins:
       - chrisdothtml/bail-fast#8a13d9d:
