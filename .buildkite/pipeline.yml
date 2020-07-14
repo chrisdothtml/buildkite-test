@@ -6,7 +6,7 @@ steps:
       - ssh://gitolite@code.uber.internal/infra/aws-sm-buildkite-plugin#9496834:
           env:
             BUILDKITE_TOKEN: buildkite-token
-      - chrisdothtml/bail-early#1f6fd63:
+      - chrisdothtml/bail-early#849cb77:
   - wait
   - command: 'echo "command 2"'
     agents:
