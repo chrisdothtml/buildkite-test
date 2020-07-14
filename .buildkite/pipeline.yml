@@ -1,0 +1,4 @@
+steps:
+  - command: 'echo command'
+    plugins:
+      - chrisdothtml/bail-fast#8a13d9d:
