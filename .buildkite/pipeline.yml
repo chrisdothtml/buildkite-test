@@ -1,13 +1,8 @@
 steps:
-  - command: 'echo foo'
+  - command: 'exit 128'
     agents:
       queue: 'uber-fleet-workers'
-    plugins:
-      - ssh://gitolite@code.uber.internal/infra/aws-sm-buildkite-plugin#9496834:
-          env:
-            BUILDKITE_TOKEN: buildkite-token
-      - chrisdothtml/bail-early#e20c4bf: ~
-  - wait
-  - command: 'echo "command 2"'
-    agents:
-      queue: 'uber-fleet-workers'
+    retry:
+      automatic:
+        - exit_status: 128
+          limit: 2
