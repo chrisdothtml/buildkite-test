@@ -1,8 +1,6 @@
 steps:
-  - command: 'exit 128'
+  - command: 'echo foo'
     agents:
-      queue: 'uber-fleet-workers'
-    retry:
-      automatic:
-        - exit_status: 128
-          limit: 2
+      queue: 'uber-internal'
+    plugins:
+      - chrisdothtml/buildkite-test#plugin: ~
