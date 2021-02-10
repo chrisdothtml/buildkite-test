@@ -1,5 +1,5 @@
 steps:
-  - command: 'sleep 20'
+  - command: 'run.sh'
     agents:
       queue: 'uber-internal'
     plugins:
