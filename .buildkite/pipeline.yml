@@ -3,4 +3,4 @@ steps:
     agents:
       queue: 'uber-internal'
     plugins:
-      - chrisdothtml/buildkite-test#plugin: ~
+      - chrisdothtml/test#test: ~
