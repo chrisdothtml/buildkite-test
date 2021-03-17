@@ -3,7 +3,7 @@ steps:
     agents:
       queue: 'uber-fleet-workers-edge'
     plugins:
-      - chrisdothtml/test#b038f6d:
+      - chrisdothtml/test#18b938e:
           vars:
-            - foo:FOO
+            - foo:FOO_TOKEN
             - bar
