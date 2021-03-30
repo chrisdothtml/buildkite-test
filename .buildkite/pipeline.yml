@@ -1,9 +1,4 @@
 steps:
-  - command: 'echo ok'
+  - command: './run.sh'
     agents:
-      queue: 'uber-fleet-workers-edge'
-    plugins:
-      - chrisdothtml/test#18b938e:
-          vars:
-            - foo:FOO_TOKEN
-            - bar
+      queue: 'uber-fleet-workers'
